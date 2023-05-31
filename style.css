@@ -9,6 +9,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+:root {
+  --color: black;
+}
+
 main {
   min-height: 100vh;
   display: grid;
@@ -20,8 +24,17 @@ main {
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
+
+.quote-text::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 0.5rem;
+  color: var(--color);
+}
+
 .btn-quote {
-  background: black;
+  background: var(--color);
   border: transparent;
   cursor: pointer;
   padding: 0.375rem 0.75rem;
